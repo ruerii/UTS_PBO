@@ -1,0 +1,1 @@
+Untuk menyambungkan aplikasi Laravel ke database, Anda dapat mengkonfigurasi file .env dan menggunakan fitur Eloquent ORM yang telah disertakan oleh Laravel dan di sesuaikan dengan database dan alamat ip kita
