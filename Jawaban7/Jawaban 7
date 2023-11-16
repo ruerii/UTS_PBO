@@ -1,0 +1,37 @@
+//pertama tama kita masuk ke directory kita 
+cd pbo
+
+//abis itu docker compose
+docker compose exec -it cr101 bash
+
+//kalau belum ada storage nya kita buat
+php artisan storage/link
+
+//biar kita bisa mengendalikan storage nya di chmod dulu
+chmod 777 -R storage/*
+
+//terus bikin model nya 
+php artisan make:model Customers -m
+//kalau udah dibuat kita bisa isiin 
+
+ 
+            $table->string('Name');
+            $table->string('Address');
+            $table->string('Phone');
+
+//posisinya dibawah $table->id();
+
+//kalau belum punya user kita bisa buat usernya
+
+php artisan make:filament-user
+
+// nanti kita isiin nama, email dan password yang sesuai di database kita
+
+
+//jangan lupa samakan db password dan connectionnnya di file .env dengan password dan ip address kita
+
+//abis itu buat resource nya 
+
+php artisan make:filament-resource Customers --generate --view
+
+//kalo udah kita migrate biar ke refresh, abis itu buka localhost/admmin di browser
