@@ -1,0 +1,1 @@
+Di Laravel, penanganan pengecualian dikonfigurasi dalam file app/Exceptions/Handler.php. File ini berisi metode laporan untuk mencatat pengecualian dan metode render untuk menyesuaikan respons saat pengecualian terjadi.
