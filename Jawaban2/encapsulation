@@ -1,1 +1,5 @@
+//masih sama di 
 
+php artisan make:model Pembeli -m
+
+//Enkapsulasi atribut model dan ditentukan mutator (metode setter) untuk merangkum logika apa pun yang terkait dengan pengaturan nilai atribut
